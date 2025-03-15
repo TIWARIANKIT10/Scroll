@@ -3,110 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Agency</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header id="home">
-
     <nav id="nav">
         <div class="nav-center">
             <div class="nav-header">
-                <img src="" alt="">
+                <img src="logo.png" alt="Company Logo">
                 <button class="nav-toggle">
                     <i class="fas fa-bars"></i>
                 </button>
-
             </div>
-             <div class="links-container">
+            <div class="links-container">
                 <ul class="links">
-                    <li>
-                        <a href="#home" class="scrool-link">home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="scrool-link">about</a>
-                    </li>
-                    <li>
-                        <a href="#services" class="scrool-link">services</a>
-                    </li>
-                    <li>
-                        <a href="#tours" class="scrool-link">tours</a>
-                    </li>
-                   
-
-
-
-
+                    <li><a href="#home" class="scroll-link">Home</a></li>
+                    <li><a href="#about" class="scroll-link">About</a></li>
+                    <li><a href="#services" class="scroll-link">Services</a></li>
+                    <li><a href="#tours" class="scroll-link">Tours</a></li>
+                    <li><a href="#testimonials" class="scroll-link">Testimonials</a></li>
+                    <li><a href="#contact" class="scroll-link">Contact</a></li>
                 </ul>
-             </div>
+            </div>
         </div>
     </nav>
+    
     <div class="banner">
         <div class="container">
-            <h1>Scrool Project</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam architecto, asperiores eveniet provident nostrum nesciunt illo iure? Possimus, officia.
-            </p>
-            <a href=""class="scroll-link"></a>
-
+            <h1>Discover Amazing Places</h1>
+            <p>Explore the world's most breathtaking destinations with us.</p>
+            <a href="#tours" class="scroll-link btn">Explore Tours</a>
         </div>
     </div>
-    
 </header>
 
-<!-- about -->
- <section id="about" class="section">
-  <div class="title">
-    <h2> 
-      about <span>us</span>
-    </h2>
-
-  </div>
- </section>
-
- <section id="services" class="section"> 
+<!-- About Us Section -->
+<section id="about" class="section">
     <div class="title">
-      <h2> 
-        our <span>services</span>
-      </h2>
-  
+        <h2>About <span>Us</span></h2>
     </div>
-   </section>
-
-   <section id="tours" class="section">
-    <div class="title">
-      <h2> 
-      tour <span>Featured</span>
-      </h2>
-  
-    </div>
-   </section>
-
-   
-  
-    </div>
-   </section>
-
-   <!-- footer -->
-    <footer class="section">
+    <div class="about-content">
+        <img src="about.jpg" alt="About Us">
         <p>
-            copyright &copy; backroads trave tours company 
-            <span id="date">
-                .all rights reserved
-
-            </span>
+            We are a leading travel agency dedicated to providing the best travel experiences. Our team ensures 
+            you have a seamless journey from start to finish.
         </p>
-    </footer>
+    </div>
+</section>
 
-    <!-- back to top -->
-     <a href="#home"  class="scrool-link top-link">
-       <i class="up arrow"></i>
+<!-- Services Section -->
+<section id="services" class="section">
+    <div class="title">
+        <h2>Our <span>Services</span></h2>
+    </div>
+    <div class="services-container">
+        <div class="service">
+            <i class="fas fa-plane"></i>
+            <h3>Flight Booking</h3>
+            <p>We offer hassle-free flight booking at the best prices.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-hotel"></i>
+            <h3>Hotel Reservations</h3>
+            <p>Find the perfect stay at top-rated hotels worldwide.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>Tour Packages</h3>
+            <p>Explore custom tour packages for your next adventure.</p>
+        </div>
+    </div>
+</section>
 
-     </a>
+<!-- Featured Tours Section -->
+<section id="tours" class="section">
+    <div class="title">
+        <h2>Tour <span>Featured</span></h2>
+    </div>
+    <div class="tours-container">
+        <div class="tour">
+            <img src="beach.jpg" alt="Beach Tour">
+            <h3>Beach Paradise</h3>
+            <p>Experience the beauty of tropical beaches.</p>
+        </div>
+        <div class="tour">
+            <img src="mountain.jpg" alt="Mountain Tour">
+            <h3>Mountain Escape</h3>
+            <p>Explore breathtaking mountain landscapes.</p>
+        </div>
+        <div class="tour">
+            <img src="city.jpg" alt="City Tour">
+            <h3>City Adventures</h3>
+            <p>Discover vibrant cities with guided tours.</p>
+        </div>
+    </div>
+</section>
 
+<!-- Testimonials Section -->
+<section id="testimonials" class="section">
+    <div class="title">
+        <h2>Our <span>Clients</span></h2>
+    </div>
+    <div class="testimonials-container">
+        <div class="testimonial">
+            <p>"The best travel experience ever! Highly recommend."</p>
+            <h4>- John Doe</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Amazing service and unforgettable trips. Will book again!"</p>
+            <h4>- Jane Smith</h4>
+        </div>
+    </div>
+</section>
 
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="title">
+        <h2>Contact <span>Us</span></h2>
+    </div>
+    <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
 
-    <script src="app.js"></script>
+<!-- Newsletter Subscription -->
+<section id="newsletter" class="section">
+    <div class="newsletter-container">
+        <h2>Subscribe to our Newsletter</h2>
+        <form action="#">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="section">
+    <p>
+        &copy; 2025 Backroads Travel Tours. All Rights Reserved.
+    </p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<a href="#home" class="scroll-link top-link">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<script src="app.js"></script>
 </body>
 </html>

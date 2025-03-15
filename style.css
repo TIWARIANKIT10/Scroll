@@ -1,198 +1,346 @@
-/* CSS */
+/* General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.5;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  /* navbar */
-  nav {
-    background: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  
-  .nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+#nav {
+  background: #333;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.nav-header img {
+  width: 120px;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+}
+
+.links li {
+  margin: 0 15px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* Hero Section */
+.banner {
+  height: 100vh;
+  background: url('hero.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.banner .container {
+  width: 80%;
+  margin: auto;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff7f50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+/* Section Titles */
+.title {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.title h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.title span {
+  color: #ff7f50;
+}
+
+/* About Us */
+.about-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.about-content img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  padding-left: 20px;
+}
+
+/* Services */
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.service {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 30%;
+}
+
+.service i {
+  font-size: 2rem;
+  color: #ff7f50;
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+/* Tours */
+.tours-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.tour {
+  width: 30%;
+  text-align: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tour img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tour h3 {
+  margin-top: 10px;
+}
+
+/* Testimonials */
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.testimonial {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 40%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-weight: bold;
+}
+
+/* Contact Form */
+form {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form button {
+  background: #ff7f50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Newsletter Subscription */
+#newsletter {
+  background: #333;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+#newsletter h2 {
+  margin-bottom: 15px;
+}
+
+#newsletter input {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#newsletter button {
+  padding: 10px 20px;
+  background: #ff7f50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+/* Back to Top */
+.top-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff7f50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+
+.top-link i {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .nav-toggle {
-    background: transparent;
-    border: none;
-    color: #49a6e9;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: all 0.3s linear;
+      display: block;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
   }
-  
-  .nav-toggle:hover {
-    transform: rotate(90deg);
-  }
-  
-  .links-container {
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3s linear;
-  }
-  
-  .links a {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-transform: capitalize;
-    letter-spacing: 0.1rem;
-    transition: all 0.3s linear;
-  }
-  
-  .links a:hover {
-    background: #49a6e9;
-    color: white;
-    padding-left: 1.5rem;
-  }
-  
-  /* show links when mobile menu is open */
-  .show-links {
-    height: 10rem;
-  }
-  
-  /* banner */
-  .banner {
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-1.2.1') center/cover;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    color: white;
-  }
-  
-  .container h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-  
-  .container p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-  }
-  
-  /* sections */
-  .section {
-    padding: 5rem 0;
-  }
-  
-  .title {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  
-  .title h2 {
-    font-size: 2.5rem;
-    text-transform: capitalize;
-  }
-  
-  .title span {
-    color: #49a6e9;
-  }
-  
-  /* footer */
-  footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  /* back to top */
-  .top-link {
-    position: fixed;
-    bottom: 3rem;
-    right: 3rem;
-    background: #49a6e9;
-    width: 2rem;
-    height: 2rem;
-    display: grid;
-    place-items: center;
-    border-radius: 0.3rem;
-    color: white;
-    animation: bounce 2s ease-in-out infinite;
-    visibility: hidden;
-    z-index: -100;
-  }
-  
-  .show-link {
-    visibility: visible;
-    z-index: 100;
-  }
-  
-  @keyframes bounce {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  @media screen and (min-width: 800px) {
-    .nav-center {
-      max-width: 1170px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem;
-    }
-  
-    .nav-header {
-      padding: 0;
-    }
-  
-    .nav-toggle {
+
+  .links {
       display: none;
-    }
-  
-    .links-container {
-      height: auto !important;
-    }
-  
-    .links {
-      display: flex;
-      gap: 2rem;
-    }
-  
-    .links a {
-      padding: 0;
-    }
-  
-    .links a:hover {
-      padding: 0;
-      background: transparent;
-      color: #49a6e9;
-    }
+      flex-direction: column;
+      background: #444;
+      position: absolute;
+      width: 100%;
+      top: 50px;
+      left: 0;
   }
+
+  .links li {
+      text-align: center;
+      padding: 10px;
+  }
+
+  .services-container,
+  .tours-container,
+  .testimonials-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service, .tour, .testimonial {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+
+  .about-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-content img {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  form {
+      width: 80%;
+  }
+}
